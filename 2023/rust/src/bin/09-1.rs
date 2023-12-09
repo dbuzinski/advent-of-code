@@ -11,7 +11,7 @@ fn main() {
             total = total + sequence_value(&seq, 0);
         }
     }
-    println!("Solution: {}", total);
+    println!("Day 9 part 1: {}", total);
 }
 
 fn sequence_value(seq: &Vec<i32>, acc: i32) -> i32 {

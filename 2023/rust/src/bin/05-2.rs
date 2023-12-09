@@ -15,7 +15,6 @@ fn main() {
     for line in lines {
         if let Ok(txt) = line {
             if txt.contains("map") {
-                println!("map line");
                 seeds = seeds.iter().map(|s| update_seed(s, current_map)).collect::<Vec<usize>>();
                 *current_map = vec![];
             } else if txt.contains(char::is_numeric) {
@@ -28,7 +27,7 @@ fn main() {
     for s in seeds.iter() {
         lowest_seed = min(*s, lowest_seed);
     }
-    println!("Lowest seed: {}", lowest_seed);
+    println!("Day 5 part 2: {}", lowest_seed);
 }
 
 fn parse_seeds(seed_line: &str) -> Vec<usize> {

@@ -12,7 +12,7 @@ fn main() {
             total = total + val;
         }
     }
-    println!("Solution: {}", total);
+    println!("Day 9 part 2: {}", total);
 }
 
 fn sequence_value(seq: &Vec<i32>, mut acc: Vec<i32>) -> i32 {

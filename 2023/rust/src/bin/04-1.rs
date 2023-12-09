@@ -10,7 +10,7 @@ fn main() {
         let (winning, your) = parse_card(&card);
         acc + card_points(winning, your)
     });
-    println!("{}", points);
+    println!("Day 4 part 1: {}", points);
 }
 
 fn parse_card(txt: &str) -> (Vec<u32>, Vec<u32>) {

@@ -12,7 +12,7 @@ fn main() {
             s += get_line_calibration(&txt).unwrap();
         }
     }
-    println!("Part 2: {}", s);
+    println!("Day 1 part 2: {}", s);
 }
 
 fn read_lines(filename: &str) -> io::Result<Lines<BufReader<File>>> {

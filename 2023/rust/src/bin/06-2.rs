@@ -14,7 +14,7 @@ fn main() {
                 ways_to_win = ways_to_win + 1;
             }
     }
-    println!("{}", ways_to_win);
+    println!("Day 6 part 2: {}", ways_to_win);
 }
 
 fn get_element(line: &str, intro_len: usize) -> usize {

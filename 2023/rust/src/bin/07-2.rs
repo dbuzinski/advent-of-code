@@ -20,7 +20,7 @@ fn main() {
         println!("{}", hand.0);
         total = total + (placing+1)*hand.1;
     }
-    println!("{}", total);
+    println!("Day 7 part 2: {}", total);
 }
 
 fn get_hand(line: &str) -> (String, usize) {

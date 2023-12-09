@@ -46,7 +46,7 @@ fn main() {
     for c in counter {
         ans = lcm(ans, c);
     }
-    println!("{}", ans);
+    println!("Day 8 part 2: {}", ans);
 }
 
 fn get_start(map: &HashMap<String,(String, String)>) -> Vec<String> {

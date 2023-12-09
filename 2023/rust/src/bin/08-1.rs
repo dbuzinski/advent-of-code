@@ -33,7 +33,7 @@ fn main() {
             },
         }
     }
-    println!("{}", num_steps);
+    println!("Day 8 part 1: {}", num_steps);
 }
 
 fn get_kv_pair(line: &str) -> (String, (String, String)){

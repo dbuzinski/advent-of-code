@@ -14,7 +14,7 @@ fn main() {
             s = s + power(game);
         }
     }
-    println!("Part 2: {}", s);
+    println!("Day 2 part 2: {}", s);
 }
 
 type Game<'a> = Vec<HashMap<&'a str, u32>>;

@@ -25,7 +25,7 @@ fn main() {
     }
     seeds = seeds.iter().map(|s| update_seed(s, current_map)).collect::<Vec<usize>>();
     let lowest_seed = seeds.iter().reduce(|acc, s| min(acc, s)).unwrap();
-    println!("Lowest seed: {}", lowest_seed);
+    println!("Day 5 part 1: {}", lowest_seed);
 }
 
 fn update_map(map: &mut Vec<Vec<usize>>, line: &str) {

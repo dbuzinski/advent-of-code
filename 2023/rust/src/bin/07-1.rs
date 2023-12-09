@@ -19,7 +19,7 @@ fn main() {
     for (placing, hand) in hands.iter().enumerate() {
         total = total + (placing+1)*hand.1;
     }
-    println!("{}", total);
+    println!("Day 7 part 1: {}", total);
 }
 
 fn get_hand(line: &str) -> (String, usize) {

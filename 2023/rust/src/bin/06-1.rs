@@ -18,7 +18,7 @@ fn main() {
         }
     }
     let prod = ways_to_win.iter().fold(1, |acc, x| x*acc);
-    println!("{}", prod);
+    println!("Day 6 part 1: {}", prod);
 }
 
 fn get_elements(line: &str, intro_len: usize) -> Vec<usize> {

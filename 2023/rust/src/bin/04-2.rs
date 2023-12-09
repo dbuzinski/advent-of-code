@@ -25,7 +25,7 @@ fn main() {
     for c in card_counts.iter() {
         sum = sum + c;
     }
-    println!("{}", sum);
+    println!("Day 4 part 2: {}", sum);
 }
 
 fn parse_card(txt: &str) -> (Vec<usize>, Vec<usize>) {

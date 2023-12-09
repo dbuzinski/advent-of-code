@@ -38,7 +38,7 @@ fn main() {
     ints2 = None;
     gears1 = gears2;
     sum = sum + get_supergear_ratio(&gears1, &ints0, &ints1, &ints2, &line0, &line1, &line2);
-    println!("{}", sum);
+    println!("Day 3 part 2: {}", sum);
 }
 
 fn parse_line(line: &str) -> (Vec<(usize, usize)>, Vec<usize>) {
@@ -107,13 +107,6 @@ fn get_ratio<'a>(gear_pos: usize, int_pos0: &Option<Vec<(usize, usize)>>, int_po
             let num = line2.get(ip2.0..ip2.1).unwrap().parse::<usize>().unwrap();
             adj_gears.push(num);
         }
-    }
-    println!("Gear {}:", gear_pos);
-    println!("l0 {}:", line0);
-    println!("l1 {}:", line1);
-    println!("l2 {}:", line2);
-    for g in adj_gears.iter() {
-        println!("{}", g);
     }
     if adj_gears.len() == 2 {
         return adj_gears[0] * adj_gears[1];

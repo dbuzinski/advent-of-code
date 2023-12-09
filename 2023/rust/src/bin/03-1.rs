@@ -36,7 +36,7 @@ fn main() {
         let part = prev_line.get(part_pos.0..part_pos.1).unwrap().parse::<usize>().unwrap();
         sum = sum + part;
     }
-    println!("{}", sum);
+    println!("Day 3 part 1: {}", sum);
 }
 
 fn parse_line(line: &str) -> (Vec<(usize, usize)>, Vec<usize>) {
