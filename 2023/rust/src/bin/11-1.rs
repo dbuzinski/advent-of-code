@@ -84,7 +84,6 @@ fn expand_columns(map: &str) -> String {
     expanded_map
 }
 
-// add a 2nd empty row where all empty rows are
 fn expand_rows(map: &str) -> String {
     let mut expanded_map = String::new();
     let empty_rows = find_empty_rows(&map);
